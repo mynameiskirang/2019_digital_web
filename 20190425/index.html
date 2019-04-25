@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		img[src$="png"]{border:3px solid red;}
+		img[src$="jpg"]{border:2px solid blue;}
+	</style>
+</head>
+<body>
+	<img src="phone1.png" alt=""><br>
+	<img src="phone2.png" alt=""><br>
+	<img src="view01.jpg" alt="">
+
+ <style>
+ 	div>h1{color:skyblue} 
+ 	div>h2{color:pink} 
+ 	div>ul>li{color:plum} 
+ 	div>ol>li{color:mediumspringgreen;}
+ 	ol#list_wrap  li{color:black;}
+
+ </style>	
+	<div>
+		<h1>스카이블루SKYBLUE</h1>
+		<h2>핑크PINK</h2> 
+		<ul>
+			<li>기형도</li>
+			<li>질투는</li>
+			<li>나의 힘</li>
+		</ul>
+ 		<ol>
+ 			<li>저녁거리마다</li>
+ 			<li>물끄러미</li>
+ 			<li>청춘을 세워보고</li>
+ 		</ol>
+ 		<br>
+ 		<ol id="list_wrap">
+ 			<li>고양이</li>
+ 			<li>강아지</li>
+ 		</ol>
+	</div>
+	<!-- (h1>{header})+(h2*4>{header}) -->
+<!--   -->
+<style>
+	h1~h2{color:blue;}
+	h2:hover/*마우스갖다대면빨강*/{color:red; background-color: yellow; cursor:pointer;}
+	h2:active{background-color: pink;}
+	input:focus/*깜빡스*/{background-color:skyblue;}
+</style>
+	<h1>header1</h1>
+	<h2>header2</h2>
+	<h2>header3</h2>
+	<h2>header4</h2>
+	<h2>header5</h2>
+	<form>
+		<input type="text">
+		<input type="text">
+	</form>
+	<style>
+		/*ul>li:first-child{background-color:red;}
+		ul>li:last-child{background-color:blue;}*/
+/*		ul>li:nth-child(1){background-color:red;}
+		ul>li:nth-child(2){background-color:orange;}
+		ul>li:nth-child(3){background-color:yellow;}
+		ul>li:nth-child(4){background-color:green;}
+		ul>li:nth-child(5){background-color:blue;}
+		ul>li:nth-child(6){background-color:purple;}
+  		/*.red{background-color:red;}*/
+
+  		ul>li:nth-child(2n){background-color:hotpink;}
+  		ul>li:nth-child(2n+1){background-color:green;}
+  		.red{background-color:red;}
+  		li{list-style:none;padding:0 15px;margin:0;float:left;color:white;}
+		ul.child>li:first-child{border-radius:10px 0 0 10px;}
+		ul.child>li:last-child{border-radius:0 10px 10px 0;}
+	</style>
+	<ul class="child">
+		<li>menu1</li>
+		<li>menu2</li>
+		<li>menu3</li>
+		<li>menu4</li>
+		<li>menu5</li>
+		<li>menu6</li>
+	</ul>
+</body>
+</html>
