@@ -3,54 +3,75 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>css</title>
+	<title>table</title>
 	<style>
-		li:first-child{color:red;}
-		ul.menu li:last-child{color:blue;}
-		ul>li:nth-child(2n){background-color:skyblue;}		
-			ul>li:nth-child(2n+1){background-color:orange;}
-/*			a:visited{color:black;}
-			a:link{color:black;}
-*/
-			a:visited,a:link{color:black;}
-			a{text-decoration:none;}
+		table{width/*폭너비*/:200px;}
+		table,th,td{
+			border-collapse:collapse
+			;border:10px solid /*실선 */#000000;}
+		td{text-align:center;
+			color:#ff00ff;}
 	</style>
 </head>
 <body>
-	<ul class="menu">
-	<!-- 	<li>menu1
-				<ul>
-					<li>summenu1</li>
-					<li>summenu2</li>
-					<li>summenu3</li>
-				</ul>
-		</li> -->
-		<li>menu1</li>
-		<li>menu2</li>
-		<li>menu3</li>
-		<li>menu4</li>
-		<li>menu5</li>
-		<li>menu6</li>
-		<li>menu7</li>
-	</ul>
-	<a href="http://www.naver.com">네이버</a><br>
-	<a href="http://bxslider.com">bxslider</a><br>
-	<a href="http://www.gabia.co.kr">가비아</a>
+	<!-- table>tr*4>td*4>{$} -->
+	<table>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td colspan="2">3</td>
+			
+		</tr>
+		<tr>
+			<td>1</td>
+			<td rowspan="2">2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td colspan="2">3</td>
+			
+		</tr>
+	</table>
 
-    <style>
-    	div>h1{color:red;}
-    	div h1{color:red;}
-    	h1{color:red;}
+	<img src="01.jpg" alt="애그타르트" width="200"> <!-- inline tag -->
+	<a href="http://www.naver.com"><img src="Levels.jpg" alt="레벨" width="200"></a>
+	
+	<img src="nothing" alt="이미지가 없습니다.">
 
-    	div>ul>li>h1{color:red;}
-    	ul>li>h1
-    	li>h1
-    </style>
-    <div>
-    </div>	
-    <h1>1</h1>	
-    <h2>2</h2>
-    	
+ 
+	<form action="action.php">
+		이름 : <input type="text"><br>
+		비밀번호 : <input type="password"><br>
+		파일 : <input type="file"><br>
+		취미 <input type="checkbox">야구 <input type="checkbox">축구 <input type="checkbox">배구<br>
+
+		색깔 <input type="radio" name="color"> 빨강
+		<input type="radio" name="color"> 파랑
+		<input type="radio" name="color"> 노랑<br>
+		음식 
+		<select>
+			<option>김밥</option>
+			<option>떡복이</option>
+			<option>라면</option>
+			<option>순대</option>
+		</select><br>
+		글쓰기<br><textarea cols="30" rows="10"></textarea><br>
+		<input type="submit"> <input type="reset">
+	</form>
+
+
+	<div style="background-color:skyblue">Lorem ipsum dolor sit amet, consectetur adipisicing <span style="color:white">elit</span>. Inventore odio doloremque assumenda, aliquid voluptatibus nostrum corrupti sint non nihil nesciunt.</div>
+
+
 
 </body>
 </html>
