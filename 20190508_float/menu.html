@@ -5,27 +5,33 @@
 	<meta charset="UTF-8">
 	<title>float menu</title>
 	<style>
-		*{margin:0; padding:0;}
+		*{margin:0; padding:0; box-sizing:border-box;}
 		li{list-style:none;}
 		a:link,a:visited{color:black;}
 		a{text-decoration:none; color:black;}
 
 		nav.menu_wrap{width: 890px;margin:0 auto;}
 		nav.menu_wrap>ul{}
-		nav.menu_wrap>ul>li{float:left;width:16.66%;background-color:skyblue;}
-		nav.menu_wrap>ul>li>a{display:block; text-align:center; line-height:45px;}
+		nav.menu_wrap>ul:after{content:"";clear:both;display:block;}
+		nav.menu_wrap>ul>li{float:left;width:16.66%;background-color:#1d5da4; border-right:1px solid #2b67a9;}
+		nav.menu_wrap>ul>li>a{display:block; text-align:center; line-height:45px;color:white;font-weight:bold;}
+
+		nav.menu_wrap>ul>li:hover{}
+		nav.menu_wrap>ul>li>a:hover{background-color:blue;color:white; background-color: #477ebb;}
+		div.visual{height: 300px;background-color:pink;}
 	</style>
 </head>
 <body>
 	<nav class="menu_wrap">
 		<ul>
-			<li><a href="#">MENU1</a></li>
-			<li><a href="#">MENU2</a></li>
-			<li><a href="#">MENU3</a></li>
-			<li><a href="#">MENU4</a></li>
-			<li><a href="#">MENU5</a></li>
-			<li><a href="#">MENU6</a></li>
+			<li><a href="#">회사소개</a></li>
+			<li><a href="#">제품소개</a></li>
+			<li><a href="#">사업영역</a></li>
+			<li><a href="#">고객센터</a></li>
+			<li><a href="#">사회공헌</a></li>
+			<li><a href="#">인재채용</a></li>
 		</ul>
 	</nav>
+	<div class="visual"></div>
 </body>
 </html>
