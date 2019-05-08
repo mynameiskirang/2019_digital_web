@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		*{margin:0; padding:0;}
+		div.wrap{width:500px;/*height: 300px; */background-color:gray; margin:0 auto; /*margin0오토하면 가운데로*/}
+		div.wrap:after{content:"";clear:both;display:block;}
+		div.wrap>div.box01{float:left; width:200px; background-color:skyblue; margin-left:25px;}
+		div.wrap>div.box02{float:right; width:200px; background-color:pink; margin-right:25px;}
+		div.wrap>div.box03{clear:both;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box01">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, incidunt animi, ea perspiciatis cupiditate similique atque. Delectus, quaerat quod quisquam.</div>
+		<div class="box02">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere laboriosam possimus porro delectus tempora cupiditate quia earum molestiae eum laudantium.</div>
+		<div class="box03">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, minima.</div>
+	</div>
+	<div style="height:100px; background-color:violet;"></div> <!-- div는 블럭단위요소라 height값만 해주면 됨 -->
+</body>
+</html>
