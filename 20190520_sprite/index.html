@@ -6,6 +6,7 @@
 	<title>sprite</title>
 	<link rel="stylesheet" href="../css/reset.css">
 	<style>
+		body{background-color:black;}
 		div.icon_wrap{}
 		div.icon_wrap .btn{
 			width: 30px; height: 30px;
@@ -30,6 +31,36 @@
 		div.icon_wrap div.item04.active{background-position:-120px -360px;}
 		div.icon_wrap div.item05.active{background-position:-160px -360px;}
 
+/*		div.sns_wrap{}
+		div.sns_wrap .btn{
+			width: 30px; height: 30px;
+			background-image: url(../images/icon-sprite.png);
+			text-indent:-1000px; cursor:pointer; float:left;}
+*/
+/*		div.sns_wrap div.item06{background-position: -200px -450px;}
+		div.sns_wrap div.item07{background-position: -240px -450px;}
+		div.sns_wrap div.item08{background-position: -280px -450px;}
+*/
+		ul.sns_wrap{}
+		ul.sns_wrap > li{width: 30px;height: 30px; background-image: url(../images/icon-sprite.png); text-indent:-10000px; float:left; margin-right: 10px;
+			}
+		ul.sns_wrap > li:nth-child(1){background-position:-200px -450px;}
+		ul.sns_wrap > li:nth-child(2){background-position:-240px -450px;}
+		ul.sns_wrap > li:nth-child(3){background-position:-280px -450px;}
+
+		ul.sns_wrap > li:hover{opacity:0.3;}
+
+		ul.sns_wrap a{display: block; line-height: 30px;}
+
+		.box{width: 100px;height: 100px; background-color:red;color:white; opacity:1; transition:.3s;}
+		.box:hover{opacity: 0.3;}
+
+		.box1{width: 100px;height: 100px; background-color:rgb(0,255,255,1);color:white; transition:.3s;}
+		.box1:hover{background-color:rgb(0,255,255,0.3);}
+
+		.box2{width: 100px;height: 100px; background-color:rgb(0,255,255,1);color:white; transition:1s;}
+		.box2:hover{background-color:rgb(0,255,255,0.3);display:none;}
+
 	</style>
 </head>
 <body>
@@ -40,5 +71,23 @@
 		<div class="btn item04">icon</div>
 		<div class="btn item05">icon</div>
 	</div>
+
+	<ul class="sns_wrap clearfix">
+		<li><a href="https://www.facebook.com/">페이스북</a></li>
+		<li><a href="https://www.youtube.com/?gl=KR&hl=ko">유튜브</a></li>
+		<li><a href="https://twitter.com/?lang=ko">트위터</a></li>
+	</ul>
+
+	<div class="box">안녕하세요</div>
+	<div class="box1">안녕하세요</div>
+	<div class="box2">안녕하세요</div>
+	
+<!-- 	<div class="sns_wrap clearfix">
+		<div class="btn item06"><a href="https://www.facebook.com/"></a>
+		</div>
+		<div class="btn item07"><a href="https://www.youtube.com/"></a></div>
+		<div class="btn item08"><a href="https://twitter.com/?lang=ko"></a></div>
+	</div>
+	 -->	
 </body>
 </html>
