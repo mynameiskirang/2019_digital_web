@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>sprite</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		div.icon_wrap{}
+		div.icon_wrap .btn{
+			width: 30px; height: 30px;
+			background-image: url(../images/icon-sprite.png);
+			text-indent:-1000px; cursor:pointer; float:left;}
+
+		div.icon_wrap div.item01{background-position: 0 -330px; transition:0.3s;}
+		div.icon_wrap div.item02{background-position: -40px -330px; transition:0.3s;}
+		div.icon_wrap div.item03{background-position: -80px -330px; transition:0.3s;}
+		div.icon_wrap div.item04{background-position: -120px -330px; transition:0.3s;}
+		div.icon_wrap div.item05{background-position: -160px -330px; transition:0.3s;}
+
+		div.icon_wrap div.item01:hover{background-position:0 -360px;}
+		div.icon_wrap div.item02:hover{background-position:-40px -360px;}
+		div.icon_wrap div.item03:hover{background-position:-80px -360px;}
+		div.icon_wrap div.item04:hover{background-position:-120px -360px;}
+		div.icon_wrap div.item05:hover{background-position:-160px -360px;}
+
+		div.icon_wrap div.item01.active{background-position:0 -360px;}
+		div.icon_wrap div.item02.active{background-position:-40px -360px;}
+		div.icon_wrap div.item03.active{background-position:-80px -360px;}
+		div.icon_wrap div.item04.active{background-position:-120px -360px;}
+		div.icon_wrap div.item05.active{background-position:-160px -360px;}
+
+	</style>
+</head>
+<body>
+	<div class="icon_wrap clearfix">
+		<div class="btn item01 active">icon</div>
+		<div class="btn item02 active">icon</div>
+		<div class="btn item03">icon</div>
+		<div class="btn item04">icon</div>
+		<div class="btn item05">icon</div>
+	</div>
+</body>
+</html>
