@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>tablet layout</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body{min-width:760px;}
+		/*main header*/
+		#main_header{
+			height: 60px; padding-left: 10px; border-bottom: 1px solid #000;
+			background-color: #1d4088; color:white; line-height: 60px; min-width:760px;
+		}
+		/*main gnb*/
+		#main_gnb{border-bottom: 1px solid #5f6673; background-color: #32394a;
+			/*min-width:760px;*/}
+		#main_gnb>ul.left{float: left;}
+		#main_gnb>ul.left>li{float: left;}
+		#main_gnb>ul.left>li>a{display: block; padding: 10px 20px; 
+			text-align: center; border-left: 1px solid #5f6673; color:white;}
+		#main_gnb>ul.left>li:nth-child(6){border-right: 1px solid #5f6673;}
+
+		#main_gnb>ul.right{float: right;}
+		#main_gnb>ul.right>li{float: left;}
+		#main_gnb>ul.right>li>a{display: block; padding: 10px 20px; 
+			text-align: center; border-left: 1px solid #5f6673; color:white;}
+		/*content wrap*/
+		#wrap{overflow: hidden;background-color: #71b1d1;}
+		#wrap>#main_lnb{float: left; width: 20%; min-width:200px; }
+		#wrap>#main_lnb a {
+			display:block; height: 40px; line-height: 40px; padding-left: 15px;
+			border-bottom: 1px solid #6298b2; border-top: 1px solid #96d6f6;
+			font-weight: bold; color:white;
+	}
+		#wrap>#content_wrap{float: left; width: 100%; margin-right: -200px; background-color: white;}
+		#wrap>#content_wrap>#content{padding-right: 200px; padding-left: 10px;}
+
+		article{padding: 10px;}
+
+		/*footer*/
+		#main_footer{padding: 10px; border-top: 1px solid #000; text-align: center;}
+
+	</style>
+</head>
+<body>
+<header id="main_header">
+	<h1>Fluid</h1>
+</header>
+<nav id="main_gnb" class="clearfix">
+	<ul class="left learfix">
+		<li><a href="#">Button</a></li>
+		<li><a href="#">Button</a></li>
+		<li><a href="#">Button</a></li>
+		<li><a href="#">Button</a></li>
+		<li><a href="#">Button</a></li>
+		<li><a href="#">Button</a></li>
+	</ul>
+	<ul class="right learfix">
+		<li><a href="#">Button</a></li>
+		<li><a href="#">Button</a></li>
+	</ul>
+</nav>
+<div id="wrap" class="clearfix">
+	<nav id="main_lnb">
+		<ul>
+			<li><a href="#">Button1</a></li>
+			<li><a href="#">Button2</a></li>
+			<li><a href="#">Button3</a></li>
+			<li><a href="#">Button4</a></li>
+			<li><a href="#">Button5</a></li>
+		</ul>
+	</nav>
+	<div id="content_wrap">
+		<div id="content">
+			<article>
+				<h1>Lorem ipsum dolor sit amet.</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores delectus harum, architecto eos tempora cum nobis alias animi cupiditate asperiores perferendis distinctio placeat, voluptatum accusamus adipisci ipsa veniam quaerat perspiciatis! Autem consequuntur voluptatum eaque nulla voluptas, culpa temporibus voluptates. A at consectetur, possimus dicta nostrum numquam provident? Dignissimos vel id doloremque nihil explicabo sit sint quos quis voluptatum animi maiores quo cum cupiditate aliquid provident numquam laboriosam necessitatibus error adipisci est, dolore. Voluptate consequatur repudiandae blanditiis quos odit provident quae dolorum placeat alias inventore ratione et nostrum saepe eos temporibus nemo ea numquam natus, cupiditate quis eveniet iusto ullam?</p>
+			</article>
+			<article>
+				<h1>Lorem ipsum dolor sit amet.</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores delectus harum, architecto eos tempora cum nobis alias animi cupiditate asperiores perferendis distinctio placeat, voluptatum accusamus adipisci ipsa veniam quaerat perspiciatis! Autem consequuntur voluptatum eaque nulla voluptas, culpa temporibus voluptates. A at consectetur, possimus dicta nostrum numquam provident? Dignissimos vel id doloremque nihil explicabo sit sint quos quis voluptatum animi maiores quo cum cupiditate aliquid provident numquam laboriosam necessitatibus error adipisci est, dolore. Voluptate consequatur repudiandae blanditiis quos odit provident quae dolorum placeat alias inventore ratione et nostrum saepe eos temporibus nemo ea numquam natus, cupiditate quis eveniet iusto ullam?</p>
+			</article>
+			<article>
+				<h1>Lorem ipsum dolor sit amet.</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores delectus harum, architecto eos tempora cum nobis alias animi cupiditate asperiores perferendis distinctio placeat, voluptatum accusamus adipisci ipsa veniam quaerat perspiciatis! Autem consequuntur voluptatum eaque nulla voluptas, culpa temporibus voluptates. A at consectetur, possimus dicta nostrum numquam provident? Dignissimos vel id doloremque nihil explicabo sit sint quos quis voluptatum animi maiores quo cum cupiditate aliquid provident numquam laboriosam necessitatibus error adipisci est, dolore. Voluptate consequatur repudiandae blanditiis quos odit provident quae dolorum placeat alias inventore ratione et nostrum saepe eos temporibus nemo ea numquam natus, cupiditate quis eveniet iusto ullam?</p>
+			</article>
+
+		</div>
+	</div>
+</div>
+<footer id="main_footer">
+<h3>html + css3</h3>
+<address>websiste layout</address>
+</footer>
+</body>
+</html>

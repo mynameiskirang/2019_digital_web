@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+		#main_header{
+			height: 45px;
+			background-image: url(img/header_background.png);
+			text-align: center;
+			position: relative;
+		}
+
+		#main_header>h1{color:white;}
+		#main_header>a.left,
+		#main_header>label.right{
+			position: absolute;display:block;height:32px;
+			background-image:url(img/sprites.png);
+			text-indent:-9999px;top:7px;
+		}
+
+	</style>
+</head>
+<body>
+ <header id="main_header" class="clearfix">
+ 		<a href="#" class="left">main</a>
+			<h1>Mobile</h1>
+			<label for="toggle" class="right">Toggle</label>
+ </header>
+</body>
+</html>
