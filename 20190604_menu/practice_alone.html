@@ -3,30 +3,31 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>MENU</title>
+	<title>menu</title>
 	<link rel="stylesheet" href="../css/reset.css">
 	<style>
-		nav.menu{width: 1000px; margin:0 auto;}
-		nav.menu>ul{}
-		nav.menu>ul>li{float:left; width: 20%; height: 40px;
-						background-color: gray;
-		}		
+ 		nav.menu{width: 1000px; margin:0 auto;}
+ 		nav.menu>ul{}
+ 		nav.menu>ul>li{float:left; width: 20%; height: 40px;
+						background-color: deeppink;
+		}
 		nav.menu>ul>li>a{
 			display: block; line-height: 40px; 
 			text-align: center;
 		}
-		nav.menu>ul>li:hover{background-color: skyblue;}
-		nav.menu>ul>li:hover .submenu>li{background-color: skyblue;}
+		nav.menu>ul>li:hover{background-color:mediumvioletred;}
+		nav.menu>ul>li:hover .submenu>li{background-color: pink;}
 
 		nav.menu>ul:hover .submenu{display: block;}
 
-		.submenu{display:none; background-color: gray;}
+		.submenu{display: none; background-color: deeppink;}
 		.submenu>li{}
 		.submenu>li>a{display: block; line-height: 30px; text-align: center;}
-		.submenu>li>a:hover{background-color:violet;}
+		.submenu>li>a:hover{background-color:mediumvioletred;}
 
-		.visual{height: 400px; background-color: orange;}
-	</style>
+
+		div.visual{background-color: lightcoral; height: 400px;}
+	</style>	
 </head>
 <body>
 	<nav class="menu">
@@ -37,7 +38,7 @@
 					<li><a href="#">sub0102</a></li>
 					<li><a href="#">sub0103</a></li>
 					<li><a href="#">sub0104</a></li>
-				</ul>
+				</ul>			
 			</li>
 			<li><a href="#">menu2</a>
 				<ul class="submenu">
@@ -73,8 +74,7 @@
 			</li>
 		</ul>
 	</nav>
+
 	<div class="visual"></div>
-
-
 </body>
 </html>
